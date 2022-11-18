@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+
+#divParent{
+    width: 418px;
+    height: 418px;
+    padding: 5px;
+    border: 1px solid #0000;
+    left: 40%;
+    position: absolute;
+}
+.clearfix{
+    content: ".";
+    display: block;
+    clear: both;
+  
+    line-height: 0;
+    height: 0;
+}
+.spnChild{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #f4fbff;
+    margin: 1px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.display{
+    background-color: lightgray;
+    color: white;
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+}
+.hide{
+    background-color: lightblue;
+    color: white;
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+}
+.matched{
+    background-color: lightgreen;
+}
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Card Matching game
+        <br>
+        Time: <span id="spnTime">0</span> second
+        <br>
+        Total Click: <span id="spnClickCount">0</span>
+        <br>
+        <button id="btnRestart">Restart</button>
+    </h2>
+    <div id="divParent" class="clearfix"></div>
+    <script src="./game.js"></script>
+</body>
+</html>
+<script src="./game.js">
+</script>

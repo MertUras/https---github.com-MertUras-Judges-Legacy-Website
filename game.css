@@ -1,0 +1,171 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+html body {
+    background-color: black;
+}
+
+
+
+.wrapper .sideBar {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sideBar .logo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sideBar .logo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    /*border-radius: 50%;*/
+    margin: 0 auto;
+}
+
+.wrapper .sideBar .logo h3 {
+    color: white;
+    margin: 10px 0 5px;
+}
+
+
+.wrapper .sideBar ul li a {
+    height: 50px;
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon {
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sideBar ul li a:hover,
+.wrapper .sideBar ul li a.active {
+    color: #0c7db1;
+    background: rgb(240, 62, 62);
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sideBar ul li a:hover .icon,
+.wrapper .sideBar ul li a.active .icon {
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before {
+    display: block;
+}
+
+
+/*MENU BAR EFFECTS*/
+.wrapper .section {
+    width: calc(100%-225px);
+    /* margin-top: 0;
+    padding-top: 0;*/
+    margin-left: 225px;
+    transition: all 0.5 ease;
+    align-items: center;
+}
+
+.wrapper .section .top_navbar {
+    background: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.wrapper .section .top_navbar .menuBar a {
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .menuBar a:hover {
+
+    color: rgb(240, 62, 62);
+}
+
+body.active .wrapper .sideBar {
+    left: -225px;
+}
+
+body.active .wrapper .section {
+    margin-left: 0;
+    width: 100%;
+}
+
+
+
+
+#divParent{
+    width: 418px;
+    height: 418px;
+    padding: 5px;
+    border: 1px solid black;
+    left: 40%;
+    position: relative;
+    margin-right: 50px;
+}
+.clearfix{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: visible;
+    background-color: white;
+    line-height: 0;
+    height: 0;
+}
+.spnChild{
+    width: 98px;
+    height: 98px;
+    border: 1px solid white;
+    background-color: black;
+    color: black;
+    margin: 1px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.display{
+    background-color: white;
+    color:black;
+    transform: rotateY(-360deg);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+ .spnChild .secret{
+    background-color: black;
+    rotate: rotateY(180deg);
+    color: black;
+    transition: transform 1s;
+    border: 1px solid white;
+}
+.matched{
+    background-color: lightgreen;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./Js/game.js"></script>
+    <link rel="stylesheet" href="./game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./jquery-3.6.0.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>JUDGES</title>
+
+
+</head>
+
+<body>
+    <!-- Menu Bar-->
+    <div class="wrapper">
+
+        <div class="sideBar">
+            <div class="logo">
+                <img src="./img/yeniLogo.png" alt="">
+                <h3>JUDGES</h3>
+            </div>
+
+
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item" id="home">HOME</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-info"></i></span>
+                        <span class="item" id="redirect" onclick="myButton()"> HISTORY</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="far fa-address-card"></i></span>
+                        <span class="item" id="profile" onclick="myButton()">PROFILE</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-tasks"></i></span>
+                        <span class="item" id="tryouts">TRYOUTS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-gamepad"></i></span>
+                        <span class="item" id="game">GAME</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="section">
+            <div class="top_navbar">
+                <div class="menuBar">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="twoContent">
+                <div class="homeField">
+                    <h1 style="text-align: center ; color:white;">JUDGES</h1>
+                    <h2 style="text-align: center ; color:white;"> Bilkent Judges Offical Web Page Project</h2>
+                </div>
+
+
+
+            </div>
+
+            <h2 style="text-align: center; color: white; position: relative;" >Card Matching game
+                <br>
+                Time: <span id="spnTime">0</span> second
+                <br>
+                Total Click: <span id="spnClickCount">0</span>
+                <br>
+                <button id="btnRestart">Restart</button>
+            </h2>
+            <div id="divParent" class="clearfix"></div>
+            <script type="text/javascript" src="./Js/game.js">
+   
+
+
+            </script>
+
+        </div>
+        <!--Section ends-->
+
+</body>
+
+</html>
+<script>
+    var menuBar = document.querySelector(".menuBar");
+    menuBar.addEventListener("click", function () {
+        document.querySelector("body").classList.toggle("active");
+    })
+    document.querySelector("#home")
+        .addEventListener('click', () => {
+            window.location.href = 'http://127.0.0.1:5500/website.html'
+        })
+    document.querySelector("#redirect")
+        .addEventListener('click', () => {
+            window.location.href = 'http://127.0.0.1:5500/history.html'
+        })
+    document.querySelector("#profile")
+        .addEventListener('click', () => {
+            window.location.href = 'http://127.0.0.1:5500/profile.html'
+        })
+    document.querySelector("#tryouts")
+        .addEventListener('click', () => {
+            window.location.href = 'http://127.0.0.1:5500/tryouts.html'
+        })
+    document.querySelector("#game")
+        .addEventListener('click', () => {
+            window.location.href = 'http://127.0.0.1:5500/game.html'
+        })
+
+
+
+
+
+</script>
